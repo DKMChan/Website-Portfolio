@@ -1,0 +1,169 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2014 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+\renewcommand*{\familydefault}{\sfdefault}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+
+\begin{center}
+\textbf{\huge Desmond Chan}\\
+Richmond, BC \\ 403-700-9499 \\ www.desmondchan.ca\\ desmondkmchan@gmail.com \\ 
+\end{center}
+
+\vspace{0.1in}
+\resheading{PROFILE}
+\begin{itemize}
+
+\item[]
+Skilled and knowledgeable computer science graduate with 4 years of programming and problem solving experience. In addition to a strong comprehension and retention ability, an aptitude for working in teams has been demonstrated by collaborating with colleagues to complete several assignments and functional projects within a given deadline. 
+\end{itemize}
+\resheading{QUALIFICATIONS}
+
+\begin{itemize}
+
+\resitem{\textbf{Experience working with: }
+C/C\#/C++, Java, Python, HTML5, PHP, MySQL, JavaScript, jQuery, Node.js, CSS, SASS, phpMyAdmin, Wordpress, Bootstrap, Amazon Web Services}
+
+\resitem{\textbf{Applications: }
+\LaTeX, Microsoft Office, Eclipse, Microsoft Visual Studio, Adobe Photoshop}
+
+\end{itemize}
+
+\resheading{EDUCATION}
+\begin{itemize}
+\item
+	\ressubheading{Certificate in Web Development}{January 2016 - April 2016}{Southern Alberta Institute of Technology}{}
+\item
+	\ressubheading{Bachelor of Science in Computer Science}{September 2011 - June 2015}{University of Calgary}{}
+
+
+\end{itemize}
+
+
+
+
+
+\resheading{PROFESSIONAL EXPERIENCE}
+\begin{itemize}
+\item
+\ressubheading{Temporary Software Developer}{June 2015 - October 2015}{Certified Tracking Solutions}{}
+\begin{itemize}
+	\resitem{Demonstrated strong problem solving skills by individually designing software using Microsoft Visual Studio to automate the process of managing and updating the firmware of GPS devices over the air using the Jasper Wireless API with no prior industry experience or guidance from a senior employee.}
+	\resitem{By automating the updating process, productivity in the workplace increased significantly, as employees no longer had to manually send commands to each individual device and could therefore focus on other tasks.}
+\end{itemize}
+\item
+	\ressubheading{Quality Assurance Testing Technician}{May 2011 - August 2011}{Certified Tracking Solutions}{}
+	\begin{itemize}
+		\resitem{Configured GPS hardware and demonstrated detail-orientation by ensuring that the units were functioning properly and had all requested features before shipping them out to the customers, which led to increase in customer satisfaction as well as a decrease in overall complaints and issues with the company products}
+		\resitem {Additionally increased company efficiency through assisting with the product readiness of the mobile devices by packaging the units and ensuring that each order was properly cataloged and ready to ship at any given time.}
+
+	\end{itemize}
+
+
+
+
+
+
+\end{itemize}
+
+
+\newpage
+\begin{center}
+\textbf{\large Desmond Chan}  Page 2\\
+\end{center}
+
+\resheading{PORTFOLIO}
+\begin{itemize}
+\item
+	\ressubheading{Personal Website}{}{http://www.desmondchan.ca}{}
+	\begin{itemize}
+	\resitem{ My portfolio website is hosted on an Amazon Web Services Instance using the Node.js Javascript runtime environment as well as the bootstrap framework. This demonstrates an understanding of both back-end and front-end knowledge in programming as well as the ability to include frameworks and libraries to support the languages. I also have integrated CSS media queries and accessibility features that demonstrate a knowledge of User Experience design.}
+	\end{itemize}
+
+\end{itemize}
+
+
+\resheading{SCHOOL PROJECTS}
+\begin{itemize}
+\item
+	\ressubheading{Project: Movie Ticketing Interface}{January 2015 - April 2015}{University of Calgary}{}
+	\begin{itemize}
+		\resitem{Further strengthened team communication and task delegation skills by working on designing and creating a movie ticketing interface using Task Centered Design with a group of colleagues}
+		\resitem{Demonstrated strong conflict resolution skills by working together to create multiple low-fidelity prototypes and discussing strengths as well as flaws for each before committing to a final version}
+	\end{itemize}
+
+\item
+	\ressubheading{Project: Book Management Database}{September 2014 - December 2014}{University of Calgary}{}
+	\begin{itemize}
+		\resitem{Collaborated with a group of colleagues to design a database for managing book inventories}
+		\resitem{Implemented with PHP using AMP (Apache-MySQL-PHP) architecture.}
+		\resitem{Utilized organizational skills to populate the database using myPHPAdmin as well as demonstrating strong attention to detail by focusing on testing the web front-end using mySQL queries in order to ensure that everything was functioning properly, even on unconventional and uncommon user inputs.}
+	\end{itemize}
+
+\end{itemize}
+
+
+%\item
+%	\ressubheading{Essay: Review of Countering Code-Injection Attacks}{September 2014 - December 2014}{University of Calgary}{}
+%	\begin{itemize}
+%	\resitem{Demonstrated professionalism and communication through a properly formatted technical evaluation of several academic security papers}
+%	\end{itemize}
+%\begin{description}
+%\item
+%	\ressubheading{Study Abroad}{May 2014 - June 2014}{Senshu %University Tokyo, Japan}{}
+%	\begin{itemize}
+%		\resitem{Spent one month in Japan immersing myself in a different culture and taking the opportunity to communicate with others in both English and Japanese as  well as having the chance to participate in several activities that I believe helped improve my conversation skills such as:}
+%		\begin{itemize}
+%		\item Spending a weekend with a host family.
+%		\item Working together with some of the Japanese students to create a final presentation.
+%		\end{itemize}
+%\end{itemize}
+%\end{description}
+\resheading{RELEVANT VOLUNTEERING EXPERIENCE}
+\begin{itemize}
+\item
+	\ressubheading{Linkages Society}{March 2015}{Golden Age Club}{}
+	\begin{itemize}
+	\resitem{Assisted the elderly with understanding tablet technology by showing them how to use the touch screen as well as how to play simple games and therefore demonstrating the ability to explain technical concepts to individuals with little to no experience dealing with technology.}
+	\end{itemize}
+
+\end{itemize}
+
+
+
+\end{document}
