@@ -1,0 +1,22 @@
+{
+  "name": "website-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://DKMChan@github.com/DKMChan/Website-Portfolio.git"
+  },
+  "author": "Desmond Chan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DKMChan/Website-Portfolio/issues"
+  },
+  "homepage": "https://github.com/DKMChan/Website-Portfolio#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
