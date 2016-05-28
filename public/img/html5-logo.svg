@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#127F6A;}
+	.st1{fill:#26B99A;}
+	.st2{fill:#EBEBEB;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:#1ABC9C;}
+</style>
+<g id="XMLID_1_">
+	<title>HTML5 Logo</title>
+	<polygon id="XMLID_11_" class="st0" points="68.3,268.3 50.1,64.4 249.9,64.4 231.7,268.3 149.9,291 	"/>
+	<polygon id="XMLID_10_" class="st1" points="150,273.7 216.1,255.3 231.7,81.1 150,81.1 	"/>
+	<polygon id="XMLID_9_" class="st2" points="150,156.7 116.9,156.7 114.6,131.1 150,131.1 150,106.1 149.9,106.1 87.3,106.1 
+		87.9,112.8 94,181.7 150,181.7 	"/>
+	<polygon id="XMLID_8_" class="st2" points="150,221.7 149.9,221.7 122,214.2 120.3,194.2 106.7,194.2 95.1,194.2 98.7,233.5 
+		149.9,247.7 150,247.7 	"/>
+	<polygon id="XMLID_3_" class="st3" points="149.9,156.7 149.9,181.7 180.7,181.7 177.8,214.2 149.9,221.7 149.9,247.7 201.2,233.5 
+		201.6,229.3 207.4,163.4 208.1,156.7 201.3,156.7 	"/>
+	<polygon id="XMLID_2_" class="st3" points="149.9,106.1 149.9,121.6 149.9,131.1 149.9,131.1 210.2,131.1 210.2,131.1 210.3,131.1 
+		210.8,125.5 212,112.8 212.6,106.1 	"/>
+</g>
+<g>
+	<path class="st4" d="M109,17h7.5v33.6H109V37.3H95.6v13.2h-7.5V17h7.5v14H109V17z"/>
+	<path class="st4" d="M138.9,23.5v27.1h-7.5V23.5h-9.5V17h26.5v6.5H138.9z"/>
+	<path class="st4" d="M183.9,29.4l-9.1,18.3h-4.5l-9-18.3v21.1h-7.5V17H164l8.6,18.4l8.7-18.4h10.1v33.6h-7.5V29.4z"/>
+	<path class="st4" d="M199.7,50.5V17h7.5v26.9h14.3v6.7H199.7z"/>
+</g>
+</svg>

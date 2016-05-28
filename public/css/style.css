@@ -1,5 +1,104 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-#intro {
+body {
     font-family: 'Montserrat', sans-serif; 
+}
+
+.skill-size {
+    width: 28em;
+    max-width: 100%;
+}
+
+.skill-svg{
+    max-height: 500px;
+    max-width: 500px;
+    min-width: 500px;
+    min-width: 500px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.skills-flex{
+    padding-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width:750px) {
+.skills-flex{
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.skill-svg{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
+}
+
+
+
+.skill-size {
+    margin-right: auto;
+    margin-left:auto;
+    margin-top: 2em;
+    max-width: 100%;
+}
+
+}
+
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1abc9c;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.skill-button{
+    display: block;
+    padding: 10px 0 10px 0;
+    margin-right:auto;
+    margin-left:auto;
+    font-size: 1.5em;
+    color: #1abc9c;
 }
