@@ -9,11 +9,24 @@ body {
     max-width: 100%;
 }
 
+.menu-size{
+    font-size:1.5em;
+    
+}
+a:hover, a:active{
+    text-decoration: none;
+    color: #1abc9c;
+}
+
+a:visited, a:link{
+    text-decoration: none;
+}
+
 .skill-svg{
-    max-height: 500px;
-    max-width: 500px;
-    min-width: 500px;
-    min-width: 500px;
+    max-height: 400px;
+    max-width: 400px;
+    min-width: 400px;
+    min-width: 400px;
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -45,6 +58,7 @@ body {
     margin-left:auto;
     margin-top: 2em;
     max-width: 100%;
+    
 }
 
 }
@@ -101,4 +115,18 @@ body {
     margin-left:auto;
     font-size: 1.5em;
     color: #1abc9c;
+}
+.skill-description{
+    white-space: pre-wrap;
+}
+.skill-description li{
+    font-size: 1.5em;
+    text-align: left;
+    
+}
+
+.skill-set{
+    max-width: 28em;
+    font-size: 1.5em;
+    
 }
