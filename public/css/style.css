@@ -60,10 +60,10 @@ a:visited, a:link{
 }
 
 .skill-svg{
-    max-height: 400px;
-    max-width: 400px;
-    min-width: 400px;
-    min-width: 400px;
+    max-height: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    min-width: 300px;
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -165,21 +165,22 @@ a:visited, a:link{
     white-space: pre-wrap;
 }
 .skill-description li{
-    font-size: 1.5em;
+   
     text-align: left;
     
 }
 
 .skill-set{
     max-width: 28em;
-    font-size: 1.5em;
+    
     
 }
 
 @media (max-width:1200px)
-{.circuit-right{
-        content:url("/assets/img/circuit-middle.svg");
-}
+{
+ .circuit-right {
+          content:url("/assets/img/circuit-middle.svg");
+        }
 
 }
 

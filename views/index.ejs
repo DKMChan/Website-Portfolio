@@ -5,6 +5,7 @@
         <link href="/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
         <link href="/assets/css/scrolling-nav.css" type="text/css" rel="stylesheet"/>
         <link href="/assets/css/style.css" type="text/css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     </head>
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
      <!-- Navigation -->
@@ -64,7 +65,7 @@
                 </div>
                 <div class="col-lg-8 about-me">
                     <h1>About Me</h1>
-                    <p class="about-description">As a recent graduate of the B.Sc Computer Science program from the University of Calgary, I decided to further specialize in the field by studying web development at the Southern Alberta Institute of Technology.</br> Although I am still new to web development, I am a critical thinker and a problem solver with a strong background in programming. I am currently looking for work in the Vancouver area and seeking new opportunities to grow my career in web or software development.</p>
+                    <p class="about-description">As a recent graduate of the B.Sc Computer Science program from the University of Calgary, I decided to further specialize in the field by studying web development at the Southern Alberta Institute of Technology.</br> Although I am still new to web development, I see myself as a critical thinker and a problem solver with a strong background in programming and I am always looking to improve my skills through learning new languages and frameworks.  </br>Recently I have moved to the Vancouver area and I am seeking new employment opportunities to grow my career in web or software development.</p>
                 </div>
             </div>
         </div>
@@ -87,13 +88,13 @@
                   <div class="panel panel-default">
                             <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="skill-set" data-toggle="collapse" data-parent="#accordion" href="#htmlcollapse">
+                                <a class="skill-set" data-toggle="collapse" data-parent="#accordion" href="#htmlcollapse" onclick="heightToggle()">
                                 Relevant Skill Set</a>
                             </h4>
                             </div>
-                            <div id="htmlcollapse" class="panel-collapse collapse ">
+                            <div id="htmlcollapse" class="panel-collapse collapse" >
                             <div class="panel-body">
-                         <pre>
+                         
                         <ul class="skill-description">
                         <li>Responsive webpage construction</li>
                         <li>Implementation of HTML fundamentals such as lists/tables/divs/spans</li>
@@ -103,7 +104,7 @@
                         <li>Implementing accessibility options such as alt-text for images and skip to content buttons</li>
 
                         </ul>
-                    </pre>
+               
                             </div>
                             </div>
                         </div>
@@ -386,7 +387,22 @@
         </div>
     </section>
     
-    
+    <section id="contact" class="contact-section">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-12">
+                     <form method="post">
+                         <h1>Contact</h1>
+                           <div class="col-md-2"></div>
+                           <div class="col-md-8">
+                                <input id="name" name="name" type="text" placeholder="Name" class="form-control"></br>
+                                <input id="email" name="email" type="email" placeholder="Email" class="form-control">
+                            </div>
+                     </form>
+                 </div>
+            </div>
+        </div>
+    </section>
 
             
     <script src="/assets/js/jquery.js"></script>
