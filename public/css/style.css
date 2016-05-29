@@ -9,8 +9,27 @@ body {
     max-width: 100%;
 }
 
+.circuit-left, .circuit-middle, .circuit-right{
+    margin-top:-110px;
+    max-width: 300px;
+    min-width: 300px;
+     
+    
+}
+
+
+.circuit-middle{
+    visibility: hidden;
+}
+
+
+.intro-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
 .menu-size{
-    font-size:1.5em;
+    font-size:1.2em;
     
 }
 a:hover, a:active{
@@ -20,6 +39,24 @@ a:hover, a:active{
 
 a:visited, a:link{
     text-decoration: none;
+}
+
+.intro-header{
+    /*margin-top: 20%;*/
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.about-me p{
+    text-align: left;
+}
+
+.about-description{
+    font-size: 1.2em;
+    padding: 15px;
+    background: #1abc9c;
+    border-radius: 15px;
 }
 
 .skill-svg{
@@ -39,8 +76,9 @@ a:visited, a:link{
     justify-content: space-between;
 }
 
-@media(max-width:750px) {
-.skills-flex{
+@media (max-width:750px) {
+
+.intro-flex, .skills-flex{
     flex-direction: column;
     justify-content: space-around;
 }
@@ -59,6 +97,13 @@ a:visited, a:link{
     margin-top: 2em;
     max-width: 100%;
     
+}
+.circuit-left{
+    max-height:40vh;
+    }
+.circuit-right{
+    max-height: 53vh;
+    visibility:visible;
 }
 
 }
@@ -130,3 +175,11 @@ a:visited, a:link{
     font-size: 1.5em;
     
 }
+
+@media (max-width:1200px)
+{.circuit-right{
+        content:url("/assets/img/circuit-middle.svg");
+}
+
+}
+
