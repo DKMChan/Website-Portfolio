@@ -1,3 +1,14 @@
+$(document).ready(function() {
+  
+        $("#skillCarousel").swiperight(function() {
+            $(this).carousel('prev');
+        });
+        $("#skillCarousel").swipeleft(function() {  
+            $(this).carousel('next');
+        });
+ 
+});
+
 //jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
@@ -47,30 +58,35 @@ if(midSize.matches)
 }
 });
 
-//$(function() {
-
-function heightToggle(){
-    var elem   = document.getElementById("#htmlcollapse");
-    if($( "#htmlcollapse" ).hasClass('in'))
+/*$(function() {
+    var iphone = window.matchMedia('(max-width: 400)')
+    if(iphone.matches)
     {
-        $('.skills-section').css("height","120vh");
+        heightToggle(200,150,400);
+    }
+});*/
+
+
+function heightToggle(maxheight,minheight, winwidth,panelID){
+    var elem   = document.getElementById(panelID);
+    if($(panelID).hasClass('in'))
+    {
+        $('.skills-section').css("height", minheight + "vh");
         console.log("height is now 120vh");
         console.log("Window Width" + $(window).width());
         
     }
-   else //if ($( "#htmlcollapse" ).css( "aria-expanded", "false" ))
+   else
    {
-       if(($(window).width() < 768 ))
+       if(($(window).width() < winwidth ))
        {
-            $('.skills-section').css("height","180vh");
-            console.log("height is now 180vh");
-            console.log("Window Width" + $(window).width());
+            $('.skills-section').css("height", maxheight + "vh");
+         
        }
        else {
            $('.skills-section').css("height","150vh");
-           console.log('Window width is not less than 768');
-           console.log("Window Width" + $(window).width());
+         
        }
     }
 }
-//});
+
