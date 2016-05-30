@@ -278,13 +278,13 @@
                             </div>
                             <div id="wpcollapse" class="panel-collapse collapse ">
                             <div class="panel-body">
-                         <pre>
+                  
                         <ul class="skill-description">
                         <li>Setting up WordPress sites and linking them to databases</li>
                         <li>Installing themes and plugins</li>
                         <li>Further customizing themes using php, CSS and javascript</li>
                         </ul>
-                    </pre>
+                 
                             </div>
                             </div>
                         </div>
@@ -303,13 +303,13 @@
                             </div>
                             <div id="awscollapse" class="panel-collapse collapse ">
                             <div class="panel-body">
-                         <pre>
+                  
                         <ul class="skill-description">
                         <li>Setting up and installing packages on Amazon EC2 Instances</li>
                         <li>Using Amazon Route 53 DNS to set up and self-host a website</li>
                         <li>Installing phpmyadmin and mySQL on an EC2 instance</li>
                         </ul>
-                    </pre>
+                    
                             </div>
                             </div>
                         </div>
@@ -334,7 +334,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="menu-size" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                <a class="menu-size" data-toggle="collapse" data-parent="#accordion" href="#collapse1" onclick="heightToggle(180,160,768,'#collapse1')">
                                 Front End Skills</a>
                             </h4>
                             </div>
@@ -349,7 +349,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="menu-size" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                <a class="menu-size" data-toggle="collapse" data-parent="#accordion" href="#collapse2" onclick="heightToggle(180,160,768,'#collapse2')">
                                 Back End Skills</a>
                             </h4>
                             </div>
@@ -364,7 +364,7 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a class="menu-size" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                <a class="menu-size" data-toggle="collapse" data-parent="#accordion" href="#collapse3" onclick="heightToggle(180,160,768,'#collapse3')">
                                 Other Skills</a>
                             </h4>
                             </div>
@@ -399,7 +399,9 @@
                                 <input id="name" name="name" type="text" placeholder="Name" class="form-control" ></br>
                                 <input id="email" name="email" type="email" placeholder="Email" class="form-control"></br>
                                 <textarea class="form-control" id="message" name="message" placeholder="Message" rows="7"></textarea></br>
-                                 <div class="g-recaptcha" data-sitekey="6LeRgR4TAAAAAKMmbktiIsWnBaYYQcAeIa2uiLzW"></div>
+                                 <div id="recaptcha">
+                                     <div class="g-recaptcha" data-sitekey="6LeRgR4TAAAAAKMmbktiIsWnBaYYQcAeIa2uiLzW"></div>
+                                   </div></br>
                                  <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                                  
                             </div>
