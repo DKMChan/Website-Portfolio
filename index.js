@@ -3,7 +3,7 @@ var nodemailer = require('nodemailer');
 var bodyParser = require('body-parser');
 var app = express();
 
-var port = process.env.PORT || 8080;
+var port = 8080;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
@@ -16,7 +16,7 @@ app.get('/',function(req,res){
 
 //handle post data on the index page(contact form)
 app.post('/send',function(req,res){
- console.log('Test');
+ 
  var transporter = nodemailer.createTransport({
      service: 'Gmail',
      auth: {
@@ -49,6 +49,4 @@ transporter.sendMail(mailOptions,function(error,info){
 
 
 app.set('view engine', 'ejs');
-
-
 app.listen(port);
