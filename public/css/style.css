@@ -184,3 +184,8 @@ a:visited, a:link{
 
 }
 
+
+.btn-lg{
+    background-color: #1abc9c;
+    border: 1px solid #1abc9c;
+}
