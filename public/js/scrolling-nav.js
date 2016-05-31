@@ -95,6 +95,6 @@ function mobileHeight(){
    if(mobilescreenSize.matches)
    {
        $('.skills-section').css("height","180vh");
-       $('.contact-section').css("height","120vh");
+       $('.contact-section').css("padding-top","250px");
    }
 }
