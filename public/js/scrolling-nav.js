@@ -58,15 +58,8 @@ if(midSize.matches)
 }
 });
 
-/*$(function() {
-    var iphone = window.matchMedia('(max-width: 400)')
-    if(iphone.matches)
-    {
-        heightToggle(200,150,400);
-    }
-});*/
 
-
+//change the height of the skill-section to accomodate extra space taken up by open panels
 function heightToggle(maxheight,minheight, winwidth,panelID){
     var elem   = document.getElementById(panelID);
     if($(panelID).hasClass('in'))
@@ -78,7 +71,12 @@ function heightToggle(maxheight,minheight, winwidth,panelID){
     }
    else
    {
-       if(($(window).width() < winwidth ))
+       if(($(window).width() <= 400 ))
+       {
+           var newheight = maxheight + 50
+           $('.skills-section').css("height", newheight + "vh");
+       }
+       else if(($(window).width() < winwidth ))
        {
             $('.skills-section').css("height", maxheight + "vh");
          
