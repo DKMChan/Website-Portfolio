@@ -6,6 +6,8 @@ $(document).ready(function() {
         $("#skillCarousel").swipeleft(function() {  
             $(this).carousel('next');
         });
+        
+        mobileHeight();
  
 });
 
@@ -88,3 +90,11 @@ function heightToggle(maxheight,minheight, winwidth,panelID){
     }
 }
 
+function mobileHeight(){
+    var mobilescreenSize = window.matchMedia('(max-width: 400px)');
+   if(mobilescreenSize.matches)
+   {
+       $('.skills-section').css("height","180vh");
+       $('.contact-section').css("height","120vh");
+   }
+}
