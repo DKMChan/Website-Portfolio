@@ -193,13 +193,16 @@ a:visited, a:link{
     }
 }
 
-.btn-lg{
-    background-color: #1abc9c;
-    border: 1px solid #1abc9c;
-}
+
 
 
 #recaptcha {
     width: 304px;
     margin: 0 auto;
+}
+
+.contact-box{
+    background-color: #1abc9c;
+    border-radius: 15px;
+    padding-bottom: 15px;
 }
