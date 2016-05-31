@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  
+  //allow for mobile swipes
         $("#skillCarousel").swiperight(function() {
             $(this).carousel('prev');
         });
