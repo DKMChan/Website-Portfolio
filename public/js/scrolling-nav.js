@@ -67,9 +67,6 @@ function heightToggle(maxheight,minheight, winwidth,panelID){
     if($(panelID).hasClass('in'))
     {
         $('.skills-section').css("height", minheight + "vh");
-        console.log("height is now 120vh");
-        console.log("Window Width" + $(window).width());
-        
     }
    else
    {
@@ -94,7 +91,7 @@ function mobileHeight(){
     var mobilescreenSize = window.matchMedia('(max-width: 400px)');
    if(mobilescreenSize.matches)
    {
-       $('.skills-section').css("height","180vh");
+       $('.skills-section').css("height","200vh");
        $('.skills-section').css("padding-top","250px");
        $('.contact-section').css("padding-top","250px");
        
