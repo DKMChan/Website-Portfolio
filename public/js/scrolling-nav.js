@@ -92,6 +92,7 @@ function mobileHeight(){
    if(mobilescreenSize.matches)
    {
        $('.skills-section').css("height","200vh");
+        $('.portfolio-section').css("height","100vh");
        $('.skills-section').css("padding-top","250px");
        $('.contact-section').css("padding-top","250px");
        
