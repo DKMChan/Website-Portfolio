@@ -69,7 +69,7 @@ of those sections to manage the look and feel of the site. */
 }
 
 .contact-section {
-    min-height: 100vh;
+    min-height: 70vh;
     padding-top: 150px;
     text-align: center;
     background: black;
