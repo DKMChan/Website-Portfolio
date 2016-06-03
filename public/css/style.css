@@ -2,31 +2,45 @@
 
 body {
     font-family: 'Montserrat', sans-serif; 
+    position: relative;
 }
+
 
 .skill-size {
     width: 28em;
     max-width: 100%;
 }
 
-.circuit-left, .circuit-middle, .circuit-right{
-    margin-top:-110px;
-    max-width: 300px;
-    min-width: 300px;
-     
-    
-}
-
-
 .circuit-middle{
     visibility: hidden;
 }
 
-
-.intro-flex{
-    display: flex;
-    justify-content: space-between;
+.circuit-top{
+    position:absolute;
+    left: 0;
+    top: 0;
+    max-height: 50vh;
+    max-width: 500px;
 }
+
+.circuit-right{
+    position:absolute;
+    right: 0;
+    top: 0;
+    max-height: 70vh;
+    max-width: 300px;
+}
+.circuit-bottom{
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    max-height: 350px;
+ 
+    z-index: 1;
+}
+
+
+
 
 .menu-size{
     font-size:1.2em;
@@ -42,15 +56,18 @@ a:visited, a:link{
 }
 
 .intro-header{
-    /*margin-top: 20%;*/
-    display:block;
-    margin-left: auto;
-    margin-right:auto;
-    z-index: 99999;
+
+   z-index: 2;
+}
+.intro-header h1{
+   
+     font-size:3em;
 }
 
 .about-me p{
     text-align: left;
+    font-size: 1em;
+    max-width: 28em;
 }
 
 .about-description{
@@ -79,7 +96,7 @@ a:visited, a:link{
 
 @media (max-width:768px) {
 
-.intro-flex, .skills-flex{
+.skills-flex{
     flex-direction: column;
     justify-content: space-around;
 }
@@ -99,14 +116,7 @@ a:visited, a:link{
     max-width: 100%;
     
 }
-.circuit-left{
-    max-height:40vh;
-    }
-.circuit-right{
-    max-height: 53vh;
-    position: relative;
-    visibility:visible;
-}
+
 
 }
 
@@ -179,19 +189,13 @@ a:visited, a:link{
     
 }
 
-@media (max-width:1200px)
-{
- .circuit-right {
-          content:url("/assets/img/circuit-middle.svg");
-        }
-}
 
-@media(max-width: 400px)
+/*@media(max-width: 400px)
 {
     .circuit-right{
         visibility: hidden;
     }
-}
+}*/
 
 
 

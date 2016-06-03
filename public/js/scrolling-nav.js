@@ -7,7 +7,7 @@ $(document).ready(function() {
             $(this).carousel('next');
         });
         
-        mobileHeight();
+    
  
 });
 
@@ -34,31 +34,20 @@ $(function() {
 
 //hide and display circuit.svg images based on window size
 $(window).resize(function() {
-   var maxSize = window.matchMedia('(max-width: 1200px)');
-   var minSize = window.matchMedia('(min-width: 768px)');
-   if (maxSize.matches)
-   {
+   var minSize = window.matchMedia('(max-width: 500px)');
+
        if(minSize.matches)
        {
            $(".circuit-right").hide();
        }
-   }
+   
    else{
        $(".circuit-right").show();
    }
     
 });
 
-$(window).resize(function() {
-var midSize = window.matchMedia('(max-width: 750px)');
 
-if(midSize.matches)
-{
-     $(".circuit-right").show();
-   
-   
-}
-});
 
 
 //change the height of the skill-section to accomodate extra space taken up by open panels
