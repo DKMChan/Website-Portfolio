@@ -7,7 +7,7 @@ $(document).ready(function() {
             $(this).carousel('next');
         });
         
-    
+        mobileHeight();
  
 });
 
@@ -34,7 +34,7 @@ $(function() {
 
 //hide and display circuit.svg images based on window size
 $(window).resize(function() {
-   var minSize = window.matchMedia('(max-width: 500px)');
+   var minSize = window.matchMedia('(max-width: 560px)');
 
        if(minSize.matches)
        {
@@ -80,6 +80,7 @@ function mobileHeight(){
     var mobilescreenSize = window.matchMedia('(max-width: 400px)');
    if(mobilescreenSize.matches)
    {
+       $(".circuit-right").hide();
        $('.skills-section').css("height","200vh");
         $('.portfolio-section').css("height","50vh");
        $('.skills-section').css("padding-top","250px");

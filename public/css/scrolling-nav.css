@@ -34,12 +34,11 @@ of those sections to manage the look and feel of the site. */
 .intro-section {
     height: 100vh;
     max-height: 100%;
-    padding-top: 150px;
+    
     text-align: center;
     vertical-align: middle;
-  display: flex;
-  align-items: center;
-    
+    display: flex;
+    align-items: center;  
     background: #fff;
 }
 
@@ -47,11 +46,11 @@ of those sections to manage the look and feel of the site. */
   /*  height: 100vh;*/
     padding-top: 75px;
     text-align: center;
-    background: #eee;
+    background: #F7F7F7;
 }
 
 .skills-section {
-    height: 150vh;
+    height: 100vh;
     padding-top: 150px;
     text-align: center;
     background: #fff;
@@ -67,5 +66,5 @@ of those sections to manage the look and feel of the site. */
     height: 100vh;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background: black;
 }
