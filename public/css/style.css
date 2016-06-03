@@ -242,7 +242,11 @@ a:visited, a:link{
 .contact-icons{
     list-style-type: none;
     margin: 0px;
-    padding: 0px;
+   
+}
+
+.contact-icons li{
+    padding-bottom: 20px;
 }
 
 .contact-link{

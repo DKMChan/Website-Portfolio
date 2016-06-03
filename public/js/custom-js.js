@@ -7,7 +7,7 @@ $(document).ready(function() {
             $(this).carousel('next');
         });
         
-      //  mobileHeight();
+      mobileHeight();
  
 });
 
@@ -56,10 +56,7 @@ function mobileHeight(){
    if(mobilescreenSize.matches)
    {
        $(".circuit-right").hide();
-       $('.skills-section').css("height","200vh");
-        $('.portfolio-section').css("height","50vh");
-       $('.skills-section').css("padding-top","250px");
-       $('.contact-section').css("padding-top","250px");
+       $('.contact-link').css("font-size",".8em");
        
    }
 }
