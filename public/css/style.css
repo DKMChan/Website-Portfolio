@@ -276,3 +276,11 @@ a:visited, a:link{
 .align-contact{
     text-align:left;
 }
+
+.carousel-control {
+    max-height: 300px;
+}
+
+.control-green{
+    color: #1abc9c;
+}
