@@ -7,7 +7,7 @@ $(document).ready(function() {
             $(this).carousel('next');
         });
         
-        mobileHeight();
+      //  mobileHeight();
  
 });
 
@@ -50,31 +50,6 @@ $(window).resize(function() {
 
 
 
-//change the height of the skill-section to accomodate extra space taken up by open panels
-function heightToggle(maxheight,minheight, winwidth,panelID){
-    var elem   = document.getElementById(panelID);
-    if($(panelID).hasClass('in'))
-    {
-        $('.skills-section').css("height", minheight + "vh");
-    }
-   else
-   {
-       if(($(window).width() <= 400 ))
-       {
-           var newheight = maxheight + 50
-           $('.skills-section').css("height", newheight + "vh");
-       }
-       else if(($(window).width() < winwidth ))
-       {
-            $('.skills-section').css("height", maxheight + "vh");
-         
-       }
-       else {
-           $('.skills-section').css("height","150vh");
-         
-       }
-    }
-}
 
 function mobileHeight(){
     var mobilescreenSize = window.matchMedia('(max-width: 400px)');

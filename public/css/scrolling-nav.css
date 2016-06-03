@@ -34,7 +34,6 @@ of those sections to manage the look and feel of the site. */
 .intro-section {
     height: 100vh;
     max-height: 100%;
-    
     text-align: center;
     vertical-align: middle;
     display: flex;
@@ -50,20 +49,27 @@ of those sections to manage the look and feel of the site. */
 }
 
 .skills-section {
-    height: 100vh;
+    min-height: 150vh;
     padding-top: 150px;
     text-align: center;
     background: #fff;
+}
+.education-section{
+    min-height: 100vh;
+    padding-top: 150px;
+     text-align: center;
+     background: #f7f7f7;
 }
 
 .portfolio-section{
     height: 20vh;
     padding-top:150px;
+   
     background: #fff;
 }
 
 .contact-section {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 150px;
     text-align: center;
     background: black;

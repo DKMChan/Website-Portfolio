@@ -75,9 +75,10 @@ a:visited, a:link{
 }
 
 .footer-section h1{
-     font-family: 'News Cycle', sans-serif; 
+    font-family: 'News Cycle', sans-serif; 
     font-size: 4em;
     color: white;
+     padding-bottom: 25px;
 }
 
 .section-title h2{
@@ -236,4 +237,22 @@ a:visited, a:link{
     border-radius: 15px;
     padding-bottom: 15px;
     position: relative;
+}
+
+.contact-icons{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.contact-link{
+    font-size: 1.2em;
+    color:white;
+}
+.contact-link img{
+    max-height: 32px;
+    max-width: 32px;
+}
+.email-link{
+    background-position:  -128.56px 0;
 }
