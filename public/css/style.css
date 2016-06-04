@@ -83,9 +83,6 @@ html {
     z-index: 1;
 }
 
-
-
-
 .menu-size{
     font-size:1.2em;
     
@@ -141,14 +138,14 @@ a:visited, a:link{
 .section-title h2{
     font-family: 'News Cycle', sans-serif;
 }
-.about-me{
+.sub-section{
     padding-bottom:50px;
 }
-.about-me h1{
+.sub-section h1{
      font-family: 'News Cycle', sans-serif;
      color: #1abc9c;
 }
-.about-me p{
+.sub-section p{
  
     text-align: left;
     font-size: 1em;

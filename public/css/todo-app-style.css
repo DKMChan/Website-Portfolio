@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=News+Cycle|Montserrat');
+
+html{
+     overflow-y:scroll;
+    }
+body{ 
+    font-family: 'Montserrat', sans-serif;
+    padding-top:50px; 
+    }
+.title-section{
+     
+    background-color: #1abc9c;
+    color: white;
+}
+.info-area{
+    font-family: 'News Cycle', sans-serif; 
+    text-align: center;
+    margin-bottom: 50px;
+}
+.label-info
+{
+    background-color: #1abc9c;
+}
+
+#todo-list{ margin-bottom:30px; }
+
+.btn-lg{
+     background-color: #1abc9c;
+     border: 1px solid #1abc9c;
+     width: 150px;
+}
+
+.btn-lg:hover{
+    background-color:#127f6a;
+    border: 1px solid #127f6a;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label {
+  position: relative;
+  background: url('/assets/img/checkbox-icon.svg') no-repeat;
+  height: 50px;
+  width: 50px;
+  display: block;
+  cursor: pointer;
+}
+
+input[type=checkbox] + label:hover,
+input[type=checkbox]:checked + label {
+  background: url('/assets/img/checkbox-icon-hover.svg') no-repeat;
+}
+
+
+.list-text{
+    font-size: 1.2em;
+  
+}
