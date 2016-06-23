@@ -1,27 +1,22 @@
-angular.module('todo-Application',[]);
-angular.module('todo-Application')
-    .controller('MainController',mainController);
-
-function mainController($scope, $http)
+var angularApp = angular.module('todo-Application',['ngMessages']);
+angularApp.controller('mainController',['$scope','$http' ,function($scope,$http)
 {
-   
-    $scope.formData = {};
-    $http.get('/todo-app').success(function(data){
+   $scope.formData = {};
+    $http.get('/api/todo-app').success(function(data){
         $scope.todos = data;
         console.log(data);
-
-
     })
     .error(function(data){
         console.log('Error: ' + data);
     });
     
        $scope.createTodo = function() {
-        $http.post('/todo-app', $scope.formData)
+        $http.post('/api/todo-app', $scope.formData)
             .success(function(data) {
-                $scope.formData = {}; // clear the form so our user is ready to enter another
+                $scope.formData = {}; 
                 $scope.todos = data;
                 console.log(data);
+       
             
             })
             .error(function(data) {
@@ -30,7 +25,7 @@ function mainController($scope, $http)
     };
     
    $scope.deleteTodo = function(id) {
-   $http.delete('/todo-app/' + id)
+   $http.delete('/api/todo-app/' + id)
             .success(function(data) {
                 $scope.todos = data;
                 console.log(data);
@@ -39,4 +34,6 @@ function mainController($scope, $http)
                 console.log('Error: ' + data);
             });
     };
-}
+
+
+}]);

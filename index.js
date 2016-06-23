@@ -14,6 +14,6 @@ app.use(favicon(__dirname + '/public/img/favicon.ico'));
 app.set('view engine', 'ejs');
 
 htmlController(app);
-//todoAppController(app);
+todoAppController(app);
 apiController(app);
 app.listen(port);

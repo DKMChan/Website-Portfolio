@@ -1,31 +1,20 @@
 var mongoose = require('mongoose');
 var config = require('../config');
-
+var todoSetup = require('../models/todoModel');
 mongoose.connect(config.getDbConnectionString());
 
-var todoSetup = require('../models/todoModel');
+//set up the database with starter data
 module.exports = function(app){
     app.get('/api/setupTodos',function(req,res){
-        
-        var starterTodos = [
+    var starterTodos = [
             {
-            username: 'test',
-            todo: 'test this application',
-            isCompleted: false,
-            hasAttachment: false
+             objective: 'test this application for errors'
             },
             {
-            username: 'test',
-            todo: 'test this application again',
-            isCompleted: false,
-            hasAttachment: false
+             objective: 'add more functionality to the applicatiob'
             },{
-            username: 'test',
-            todo: 'learn node',
-            isCompleted: false,
-            hasAttachment: false
+             objective: 'create a better UI for the application'
             }
-            
         ];
         todoSetup.create(starterTodos,function(err,results){
             res.send(results);

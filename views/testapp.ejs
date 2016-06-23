@@ -5,10 +5,11 @@
     <link href="/assets/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
     <link href="/assets/css/todo-app-style.css" type="text/css" rel="stylesheet"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.7/angular-messages.js"></script>
     <script src="/assets/js/todo-app.js"></script>
 </head>
-<body ng-controller="MainController as vm">
+<body ng-controller="mainController">
     <div class="container">
         <section>
         <div class="jumbotron text-center title-section">
@@ -16,8 +17,7 @@
             <h3>Click the box next to an item to remove it</h3>
         </div>
         </section>
-        <section>
-            
+        <section>          
             <div id="todo-list" class="row">
                 <div class="col-lg-12 info-area"><h2>Number of items: <span class="label label-info">{{ todos.length }}</span></h2></div>
                 <div class="col-sm-4 col-sm-offset-4">
@@ -26,17 +26,20 @@
                           <label class="list-text">{{ todo.objective }} </label>
                     </div>
                 </div>
-            
             </div>
         </section>
         <div id="todo-form" class="row">
             <div class="col-sm-8 col-sm-offset-2 text-center">
-                <form>
+                <form name="userList"  novalidate>
                     <div class="form-group">
-                        <input type="text" class="form-control input-lg text-center" ng-model="formData.text">
+                        <input type="text" name="listItem" class="form-control input-lg text-center" ng-model="formData.text" ng-minlength="3" ng-maxlength="40" required >
+                        <div class="help-block" ng-messages="userList.listItem.$error" >
+                                <p ng-message="minlength">The input must be 3 characters or longer</p>
+                                <p ng-message="maxlength">The input must be less than 40 characters</p>
+                                <p ng-message="required">Please type something in the textbox</p>
+                            </div>
                     </div>
-                    {{vm.message}}
-                    <button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Add</button>
+                    <button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()" ng-disabled="userList.$invalid">Add</button>
                 </form>
             </div>
         </div>
