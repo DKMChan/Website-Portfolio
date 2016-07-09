@@ -45,7 +45,7 @@ module.exports = function(app) {
 
     });
 
-    // delete a todo
+    // delete an item from the list
     app.delete('/api/todo-app/:todo_id', function(req, res) {
         todoList.remove({
                 _id : req.params.todo_id

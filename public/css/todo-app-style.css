@@ -58,3 +58,9 @@ input[type=checkbox]:checked + label {
     font-size: 1.2em;
   
 }
+
+.btn:active, .btn:focus, .btn:disabled{
+    background-color:#127f6a !important; 
+    box-shadow: none;
+
+}
