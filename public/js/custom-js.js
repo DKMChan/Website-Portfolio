@@ -33,7 +33,7 @@ $(function() {
 
 
 //hide and display circuit.svg images based on window size
-$(window).resize(function() {
+/*$(window).resize(function() {
    var minSize = window.matchMedia('(max-width: 560px)');
 
        if(minSize.matches)
@@ -45,7 +45,7 @@ $(window).resize(function() {
        $(".circuit-right").show();
    }
     
-});
+});*/
 
 
 
@@ -55,7 +55,7 @@ function mobileHeight(){
     var mobilescreenSize = window.matchMedia('(max-width: 400px)');
    if(mobilescreenSize.matches)
    {
-       $(".circuit-right").hide();
+      // $(".circuit-right").hide();
        $('.contact-link').css("font-size",".8em");
        
    }

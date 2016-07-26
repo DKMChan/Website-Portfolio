@@ -12,6 +12,17 @@ html {
     height: 100%;
 }
 
+.navbar-default{
+     background: url("/assets/img/lowpolybackground.svg") no-repeat fixed;
+     background-size: cover;
+     width: 100%;
+
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
 .intro-section {
     height: 100vh;
     max-height: 100%;
@@ -19,7 +30,11 @@ html {
     vertical-align: middle;
     display: flex;
     align-items: center;  
-    background: #fff;
+    background: url("/assets/img/lowpolybackground.svg") no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .about-section {
@@ -97,25 +112,27 @@ a:visited, a:link{
 }
 
 .intro-header{
+    max-width: 100%;
    z-index: 2;
    color: white;
 }
 
 
 .intro-box{
-    background-color: #1abc9c;
+   /*background-color: #1abc9c;*/
     min-height: 200px;
-    max-width: 500px;
-    display: block;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
     padding: 20px;
-
 }
+
 .intro-header h1{
      display: inline;
-     font-size:4em;
+     font-size:3.75em;
 }
 
 .section-title{
