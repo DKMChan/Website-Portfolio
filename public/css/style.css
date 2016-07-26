@@ -7,10 +7,15 @@ body {
     height: 100%;
 }
 
-html {
+html,body {
     width: 100%;
     height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
+
+
 
 .navbar-default{
      background: url("/assets/img/lowpolybackground.svg") no-repeat fixed;
@@ -34,6 +39,12 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+@media screen and (max-width:500px) {
+    .intro-section{
+       padding: 0px;
+    }
 }
 
 .about-section {
