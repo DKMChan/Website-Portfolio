@@ -21,7 +21,7 @@ html {
 
 
 .navbar-default{
-     background: url("/assets/img/lowpolybackground.svg") no-repeat fixed;
+     background: url("/assets/img/lowpolybackground.svg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -42,7 +42,7 @@ html {
     vertical-align: middle;
     display: flex;
     align-items: center;  
-    background: url("/assets/img/lowpolybackground.svg")  no-repeat fixed;
+    background: url("/assets/img/lowpolybackground.svg")  no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
