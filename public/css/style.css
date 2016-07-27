@@ -7,7 +7,8 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 html {
@@ -36,17 +37,19 @@ html {
     vertical-align: middle;
     display: flex;
     align-items: center;  
-    background: url("/assets/img/lowpolybackground.svg") no-repeat fixed;
+    background: url("/assets/img/lowpolybackground.svg")  no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    overflow-x: hidden;
+    overflow: hidden;
+
+
 }
 
 @media screen and (max-width:500px) {
     .intro-section{
-       padding: 0px;
+
     }
 }
 
