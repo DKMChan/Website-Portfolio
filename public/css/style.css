@@ -22,7 +22,12 @@ html {
 
 .navbar-default{
      background: url("/assets/img/lowpolybackground.svg") no-repeat fixed;
-     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+
      
 }
 .navbar-default .navbar-nav > li > a {
@@ -37,7 +42,7 @@ html {
     vertical-align: middle;
     display: flex;
     align-items: center;  
-    background: url("/assets/img/lowpolybackground.svg")  no-repeat center center fixed;
+    background: url("/assets/img/lowpolybackground.svg")  no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -47,11 +52,7 @@ html {
 
 }
 
-@media screen and (max-width:500px) {
-    .intro-section{
 
-    }
-}
 
 .about-section {
   /*  height: 100vh;*/
