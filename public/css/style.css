@@ -24,10 +24,6 @@ html {
 
 .navbar-default{
      background: url("/assets/img/lowpolybackground.svg") no-repeat center center fixed;
-      -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -40,13 +36,8 @@ html {
 
 ul.nav li.dropdown:hover ul.dropdown-menu {
     display: block;
-    
     border-color: #fff;
     background: url("/assets/img/lowpolybackground.svg") no-repeat center center fixed;
-     -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -71,17 +62,20 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
     display: flex;
     align-items: center;  
     background: url("/assets/img/lowpolybackground.svg")  no-repeat center center fixed;
-     -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     overflow: hidden;
+}
 
-
+@media screen and (max-width:500px) {
+    .intro-section, .navbar-default { 
+        -webkit-background-attachment:scroll;
+        -moz-background-attachment:scroll;
+        -o-background-attachment:scroll;
+        background-attachment:scroll;
+        }
 }
 
 
