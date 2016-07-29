@@ -70,7 +70,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
 }
 
 @media screen and (max-width:500px) {
-    .intro-section, .navbar-default { 
+    .intro-section { 
         -webkit-background-attachment:scroll;
         -moz-background-attachment:scroll;
         -o-background-attachment:scroll;
