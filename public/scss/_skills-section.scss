@@ -1,0 +1,43 @@
+.skill-button{
+    display: block !important;
+    padding: 10px 0 10px 0;
+    margin-right:auto;
+    margin-left:auto;
+    font-size: 1.5em;
+    color: #1abc9c;
+}
+.skill-description{
+    white-space: pre-wrap;
+    li{
+        text-align: left;
+    }
+}
+
+.skill-set{
+    max-width: 28em;
+    text-decoration: none;
+    font-weight: 300;
+    
+}
+.skill-svg{
+    max-height: 300px;
+    max-width: 300px;
+    min-width: 300px;
+    min-width: 300px;
+}
+.skill-size {
+    width: 28em;
+    max-width: 100%;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.carousel-control {
+    max-height: 300px;
+}
+
+.control-green{
+    color: #1abc9c;
+}

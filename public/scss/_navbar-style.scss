@@ -1,0 +1,49 @@
+$background-image: '/assets/img/lowpolybackground.svg';
+$navmenu-font-color: #fff;
+@mixin background-style($type)
+{
+    -webkit-background-size: $type;
+    -moz-background-size: $type;
+    -o-background-size: $type;
+    background-size: $type;  
+}
+
+.navbar-default{
+     background: url($background-image) no-repeat center center fixed;
+     @include background-style(cover);
+     overflow: visible;   
+}
+.navbar-default .navbar-nav > li > a {
+    color: $navmenu-font-color;
+}
+
+ul.nav li.dropdown:hover ul.dropdown-menu 
+{
+    display: block;
+    border-color: $navmenu-font-color;
+    background: url($background-image) no-repeat center center fixed;
+    @include background-style(cover);
+    overflow: visible; 
+}
+
+.navbar-collapse.in {
+     overflow-y: visible;
+    
+}
+.dropdown-menu > li > a {
+      color: $navmenu-font-color;
+}
+
+
+.menu-size{
+    font-size:1.2em;
+    
+}
+a:hover, a:active{
+    text-decoration: none;
+    color: #1abc9c;
+}
+
+a:visited, a:link{
+    text-decoration: none;
+}

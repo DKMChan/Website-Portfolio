@@ -1,0 +1,42 @@
+
+@media screen and (max-width:500px) {
+    .intro-section { 
+        -webkit-background-attachment:scroll;
+        -moz-background-attachment:scroll;
+        -o-background-attachment:scroll;
+        background-attachment:scroll;
+        }
+}
+
+@media screen and (max-width:768px) {
+.skill-svg{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
+}
+
+
+
+.skill-size {
+    margin-right: auto;
+    margin-left:auto;
+    margin-top: 2em;
+    max-width: 100%;
+    
+    }
+
+
+}
+
+@media screen and (min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
