@@ -32,25 +32,6 @@ $(function() {
 });
 
 
-//hide and display circuit.svg images based on window size
-/*$(window).resize(function() {
-   var minSize = window.matchMedia('(max-width: 560px)');
-
-       if(minSize.matches)
-       {
-           $(".circuit-right").hide();
-       }
-   
-   else{
-       $(".circuit-right").show();
-   }
-    
-});*/
-
-
-
-
-
 function mobileHeight(){
     var mobilescreenSize = window.matchMedia('(max-width: 400px)');
    if(mobilescreenSize.matches)
