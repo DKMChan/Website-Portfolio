@@ -169,7 +169,8 @@ html {
   .sub-section p {
     text-align: center;
     font-size: 1em;
-    max-width: 28em; }
+    max-width: 28em;
+  margin: 0 auto;}
 
 .about-description {
   font-size: 1.2em;
